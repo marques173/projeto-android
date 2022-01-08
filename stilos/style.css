@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+
+ @font-face{
+     font-family: 'android';
+     src: url('../fontes/idroid.otf')format('opentype');
+     font-weight: normal;
+     
+ }
+
+
+
+:root {
+--cor01: #71F76A;
+--cor02: #2AF520;
+--cor03: #21C219;
+--cor04: #387535;
+--cor05: #14750F;
+
+--font-padrao: arial,verdana,helvetica,sans-serif;
+--font-destaque: 'bebas neue', cursive;
+--font-android: 'android', cursive;
+/*
+Quando for por seletor asteristico apra nao 
+ter margem em nenhum elemento nao pode colocar 
+dentro de ROOT tem que ser fora de ROOT
+*/
+}
+
+* {
+ padding: 0px;
+ margin: 0px;  
+  
+}
+
+body{
+background-color: #161816;
+font-family: var(--font-padrao);
+
+}
+a.externo::after{
+    content:'\00a0\1f517';
+}
+
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+header{
+   
+   min-height: 150px;
+   padding-top: 40px;
+   text-align: center;
+   
+
+}
+header> h1 {
+    background-color:var(--cor04);
+color: rgb(228, 215, 215);
+font-family: var(--font-destaque);
+text-align: center;
+margin: 20px;
+padding-top: 40px;
+min-height: 150px;
+text-shadow: 2px 2px 0px rgb(97, 94, 95);
+
+
+
+
+}
+
+header h2{
+    
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(24, 1, 6, 0.637);
+    min-height: 150px;
+    background-color: var(--cor04);
+     
+}
+
+header> p{
+    
+margin: 20px;
+text-align: center;
+font-family: var(--font-padrao);
+font-size: 1.2em;
+color: white;
+margin: auto;
+max-width: 600px;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+nav{
+background-color: var(--cor04);
+margin: 20px;
+
+}
+
+nav>a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+nav>a:hover{
+    background-color: var(--cor03);
+    transition-duration: .5;
+
+}
+
+
+main{
+background-color: white;
+min-width: 320px;
+max-width: 1000px;
+padding: 20px;
+margin: auto;
+margin-bottom: 30px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+box-shadow: 0px 0px 10px black;
+
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main> h1{
+color: var(--cor04);
+font-family: var(--font-android);
+
+
+}
+
+
+main> h2{
+   
+    color: var(--cor04);
+    font-family: var(--font-android);
+     
+}
+
+main strong{
+color: var(--cor03);
+font-weight: bold;
+
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor05);
+    background-color: var(--cor01);
+
+}
+
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+    margin: auto;
+    display:block;
+}
+
+div.video{
+    background-color: white;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    
+    padding: bottom 59%;
+    
+   
+
+}
+div.video>iframe{
+    
+    top: 5%;
+    left: 100%;
+   
+    
+
+}
+aside{
+    background-color: var(--cor04);
+    padding: 10px;
+    border-radius: 10px;
+   
+
+}
+aside >h3{
+background-color: var(--cor03);
+color: white;
+padding: 10px;
+border-radius: 10px 10px 0px 0px;
+
+
+
+
+
+}
+aside ul{
+list-style-position:inside ;
+columns: 2;
+list-style-type:'\2714\00a0';
+
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+    
+}
+
+footer{
+background-color: rgb(161, 137, 137);
+color: white;
+
+
+}
